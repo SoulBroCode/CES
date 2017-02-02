@@ -52,7 +52,7 @@ int main(void)
 	as.addEntity(alien);
 	as.addEntity(cat);
 	as.addEntity(dog);
-	//our team has to consist of only 4 people. We want geroge > frankie, need to speak to geroge what he wants...
+
 	//gametime loop
 	float last = 0.0f;
 	float current = 0.0f;
