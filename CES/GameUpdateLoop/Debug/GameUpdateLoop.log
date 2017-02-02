@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\linh\desktop\gameupdateloop\gameupdateloop\gameupdateloop\componenttest.h(40): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\linh\desktop\gameupdateloop\gameupdateloop\gameupdateloop\componenttest.h(42): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\linh\desktop\gameupdateloop\gameupdateloop\gameupdateloop\componenttest.h(56): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\linh\desktop\gameupdateloop\gameupdateloop\gameupdateloop\componenttest.h(58): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\GameUpdateLoop\GameUpdateLoop\Debug\GameUpdateLoop.exe
+  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\GameUpdateLoop\GameUpdateLoop\Debug\GameUpdateLoop.pdb (Full PDB)
