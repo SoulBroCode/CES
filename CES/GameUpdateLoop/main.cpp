@@ -1,41 +1,58 @@
 #include <iostream>
 #include <Windows.h>
 #include "GameTime.h"
-#include "ComponentTest.h"
-#include  "SystemTest.h"
+#include "Component.h"
+#include "System.h"
 using namespace std;
 
-const float TRIGGER = 0.2f;
+const float TRIGGER = 1.2f;
 
 int main(void)
 {
 	HealthComponent hc; PositionComponent pc; ControlComponent cc;
 
 	Entity player;
+	player.setID((int)Entity_types::PLAYER);
 	player.addComponent(hc); 
 	player.addComponent(pc);
 	player.addComponent(cc);
 
 	Entity alien;
+	alien.setID((int)Entity_types::ALIEN);
 	alien.addComponent(hc);
 	alien.addComponent(pc);
 
 	Entity cat;
+	cat.setID((int)Entity_types::CAT);
 	cat.addComponent(hc);
 	cat.addComponent(pc);
 
 	Entity dog;
+	dog.setID((int)Entity_types::DOG);
 	dog.addComponent(hc);
 	dog.addComponent(pc);
+	dog.addComponent(cc);
 
-	ControlSystem hs; 
-	hs.addEntity(player);
-	hs.addEntity(alien);
-	hs.addEntity(cat);
-	hs.addEntity(dog);
+	dog.removeComponent(cc);
 
-	C
+	ControlSystem cs; 
+	cs.addEntity(player);
+	cs.addEntity(alien);
+	cs.addEntity(cat);
+	cs.addEntity(dog);
 
+	RenderSystem rs;
+	rs.addEntity(player);
+	rs.addEntity(alien);
+	rs.addEntity(cat);
+	rs.addEntity(dog);
+
+	AISystem as;
+	as.addEntity(player);
+	as.addEntity(alien);
+	as.addEntity(cat);
+	as.addEntity(dog);
+	//our team has to consist of only 4 people. We want geroge > frankie, need to speak to geroge what he wants...
 	//gametime loop
 	float last = 0.0f;
 	float current = 0.0f;
@@ -48,10 +65,12 @@ int main(void)
 		if((current - last) > TRIGGER)
 		{
 			std::cout << "updating...." << std::endl;
-			hs.update();
+			cs.update();
+			rs.update();
+			as.update();
 			last = current;
 		}
-		Sleep(500);//main process sleeps
+		Sleep(1000);//main process sleeps
 	}
 	system("PAUSE");
 }

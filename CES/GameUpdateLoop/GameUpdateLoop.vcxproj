@@ -76,20 +76,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Entity.c" />
     <ClCompile Include="GameTime.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="System.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h" />
-    <ClInclude Include="ComponentTest.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="EntityTest.h" />
     <ClInclude Include="GameTime.h" />
-    <ClInclude Include="HealthSystem.h" />
     <ClInclude Include="System.h" />
-    <ClInclude Include="SystemTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
