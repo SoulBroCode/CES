@@ -2,5 +2,6 @@
 c:\users\linh\desktop\ces\ces\gameupdateloop\component.h(39): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
 c:\users\linh\desktop\ces\ces\gameupdateloop\component.h(41): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
 c:\users\linh\desktop\ces\ces\gameupdateloop\component.h(56): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\CES\CES\Debug\GameUpdateLoop.exe
-  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\CES\CES\Debug\GameUpdateLoop.pdb (Full PDB)
+  LINK : C:\Users\Linh\Desktop\CES\CES\Debug\GameUpdateLoop.exe not found or not built by the last incremental link; performing full link
+  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\CES\CES\Debug\GameUpdateLoop.exe
+  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\CES\CES\Debug\GameUpdateLoop.pdb (Full PDB)

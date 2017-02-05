@@ -24,7 +24,6 @@ int main(void)
 
 	Entity cat;
 	cat.setID((int)Entity_types::CAT);
-	cat.addComponent(hc);
 	cat.addComponent(pc);
 
 	Entity dog;
